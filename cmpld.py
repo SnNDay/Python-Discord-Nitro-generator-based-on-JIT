@@ -40,5 +40,5 @@ async def checkNitroLinkValidation(url: str):
         if response.status == 200: print(f"Valid gift: https://discord.gift/{url[54:73]}"); winsound.Beep(2000, 1000)
 
 
-# Pre-compiling cyclic code (like sending request for example) to bytecode and speed up or program even MORE
-print_border: types.CodeType = compile("print('-'*100)", "", "eval", 8192)
+# Pre-compiling cyclic code (like sending request for example) to bytecode and speed up or program even more but common print() function doesn't require that
+print_border: types.CodeType = compile("print('-'*100)", "", "eval", 8192) # 8192 - flag of async/await support
