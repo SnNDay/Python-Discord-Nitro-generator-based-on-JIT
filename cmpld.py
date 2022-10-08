@@ -6,8 +6,6 @@ import aiohttp
 import asyncio
 import random
 import types
-import time
-import ast
 
 # Preparations (ASCII-symbols + left and right link parts)
 CHAR_ARRAY = np.array(['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r',
