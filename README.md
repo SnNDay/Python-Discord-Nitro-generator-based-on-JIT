@@ -1,6 +1,6 @@
-# Python-Discord-Nitro-generator-based-on-JIT
+# Fast Python Discord Nitro Generator and checker
 This is a free-to-use discord nitro generator coded on Python that makes thousands requests using JIT-compiling
 Included speed-up libraries are: numba, numpy.
 
-Link generator can make 1 million string links per 35 seconds (no multiprocessing, asyncs or threading)
-For more information look at the code.
+Link generator can make 30k links per second and check this with multiprocessing, asyncs and JIT-compilation (at least I tried to make this as fast as possible)
+Go to files for additional info
