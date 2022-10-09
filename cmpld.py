@@ -27,7 +27,7 @@ def genRandomAsciiSymbol(): return CHAR_ARRAY[random.randint(0, 61)]
 @nb.njit(fastmath=True, nogil=True)
 def createEmptyNitroCodeArray(): return np.empty(shape=19, dtype="<U1")
 
-# Generate random link with steroid speedup
+# Generate random link with steroid speedup (nogil is required to run function on different CPU kernels)
 @nb.njit(fastmath=True, nogil=True)
 def genNitroLink():
     gen_code = createEmptyNitroCodeArray()
